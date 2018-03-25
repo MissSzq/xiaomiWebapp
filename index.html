@@ -1,0 +1,572 @@
+<!doctype html><!--声明HTML文件-->
+<html lang="en" style="font-size:100px;"><!--网页的开始-->
+ <head><!--浏览器的信息-->
+  <meta charset="UTF-8"><!--设置编码格式为国际编码格式-->
+  <meta name="Author" content="Sunny">
+  <meta name="Keywords" content=""><!--为搜索引擎提供关键字列表-->
+  <meta name="Description" content=""><!--对网页的描述，给搜索引擎抓取-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--屏幕适应-->
+  <title>小米移动端</title>
+  <link rel="stylesheet" href="css/index.css"/>
+  <link rel="stylesheet" href="css/base.css"/>
+  <link rel="stylesheet" href="css/swiper-3.4.2.min.css"/>
+  <script type="text/javascript">
+	!function(n){
+		var e=n.document,
+			t=e.documentElement,
+			i=720,
+			d=i/100,
+			o="orientationchange"in n?"orientationchange":"resize",
+			a=function(){
+				var n=t.clientWidth||320;n>720&&(n=720),
+				t.style.fontSize=n/d+"px"
+				};
+		e.addEventListener&&(n.addEventListener(o,a,!1),
+		e.addEventListener("DOMContentLoaded",a,!1))
+	}(window);
+  </script>
+ </head>
+ <body><!--可视化区域-->
+	<div id="wrapper">
+		<!--头部-->
+		<header class="header">
+			<div class="top-header">
+				<div class="topbar clearfix">
+					<div class="tb-logo fl-l">
+						<img src="images/logo.png" alt="logo">
+					</div>
+					<div class="tb-search fl-l"><a href="#">搜索商品名称</a></div>
+					<div class="tb-login fl-l"><a href="">登录</a></div>
+				</div>
+				<div class="top-slide">
+					<ul>
+						<li class="bor-b-f6"><a href="#">推荐</a></li>
+						<li><a href="#">智能</a></li>
+						<li><a href="#">电视</a></li>
+						<li><a href="#">生活</a></li>
+						<li><a href="#">家居</a></li>
+						<li><a href="#">盒子</a></li>
+						<li><a href="#">电脑</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<div class="main-container">
+			<!--轮播-->
+			<section class="mc-banner">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<a href="#">
+								<img src="images/banner1.webp" alt="图片">
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#">
+								<img src="images/banner2.webp" alt="图片">
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#">
+								<img src="images/banner3.webp" alt="图片">
+							</a>
+						</div>
+					</div>
+					<div class="swiper-pagination banner-pagination"></div>
+				</div>
+			</section>
+			<!--VIP-->
+			<section class="mc-vip">
+				<ul>
+					<li>
+						<a href="#">
+							<img src="images/vipnav1.png" alt="图片">
+							<p>米粉卡</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/vipnav2.png" alt="图片">
+							<p>商品发布</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/vipnav3.png" alt="图片">
+							<p>免费领卷</p>
+						</a>	
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/vipnav4.png" alt="图片">
+							<p>物流查询</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/vipnav5.png" alt="图片">
+							<p>以旧换新</p>
+						</a>
+					</li>
+				</ul>
+			</section>
+			<!--商城早报-->
+			<section class="mc-news clearfix">
+					<a href="#" class="fl-l">
+						<img src="images/guangbo.png" alt="商城早报">
+					</a>
+					<a href="#" class="news-text fl-l">
+						中秋这样送礼就够啦!
+					</a>
+				</a>
+			</section>
+			<!--推荐-->
+			<section class="mc-recommend clearfix">
+				<div class="mc-rd-list1 fl-l">
+					<a href="#">
+						<p>全面屏2.0</p>
+						<span>18:9屏幕比例，轻薄四曲面</span>
+						<img src="images/recommend1.png" alt="图片">
+					</a>
+				</div>
+				<div class="mc-rd-list mc-rd-list2 fl-l">
+					<a href="#">
+						<p>压力电饭煲</p>
+						<span>限量送保鲜盒</span>
+						<img src="images/recommend2.png" alt="图片">
+					</a>
+				</div>
+				<div class="mc-rd-list mc-rd-list3 fl-l">
+					<a href="#">
+						<p>直降400元</p>
+						<span>小米电视4A 55英寸标准版</span>
+						<img src="images/recommend3.png" alt="图片">
+					</a>
+				</div>
+				<div class="mc-rd-lsit4 mc-rd-com fl-l">
+					<a href="#">
+						<div>
+							<p>小米5X边角双摄</p>
+							<p>5.5"大屏轻薄全金属，4GB大内存</p>
+						</div>
+					</a>
+				</div>
+				<div class="mc-rd-lsit5 mc-rd-com fl-l">
+					<a href="#">
+						<div>
+							<p>13.3"笔记本 i5</p>
+							<p>限时特惠 立减200元</p>
+						</div>
+						
+					</a>
+				</div>
+			</section>
+			<!--明星单品-->
+			<section class="mc-star">
+				<a href="#" class="mc-st-header">
+					<h2>明星单品</h2>
+				</a>
+				<div class="mc-star-content">
+					<a href="#">
+						<p>红米Note 5A 高配版</p>
+						<p>1600万柔光自拍 限量赠壳膜 米粉卡</p>
+						<p>￥889</p>
+						<img src="images/start1.png" alt="图片">
+					</a>
+				</div>
+				<div class="mc-star-list clearfix">
+					<div class="star-list-lt fl-l">
+						<ul class="clearfix">
+							<li>
+								<a href="#">
+									<img src="images/start-nav1.jpg" alt="图片">
+								</a>
+								<a href="#">
+									<div>
+										<p>小米6 陶瓷尊享版</p>
+										<p>双焦双摄</p>
+										<p>￥2999</p>
+										<i>现货</i>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/start-nav3.jpg" alt="图片">
+								</a>
+								<a href="#">
+									<div>
+										<p>小米电视4A 43英寸标准设备</p>
+										<p>全高清/HDR,64位处理器</p>
+										<p>￥1899</p>
+										<i>立减</i>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/star-nav5.jpg" alt="图片">
+								</a>
+								<a href="#">
+									<div>
+										<p>红米 NOTE</p>
+										<p>双焦双摄</p>
+										<p>￥1699</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="star-list-rgt fl-r">
+						<ul class="clearfix">
+							<li>
+								<a href="#">
+									<img src="images/start-nav2.jpg" alt="图片">
+								</a>
+								<a href="#">
+									<div>
+										<p>小米6 陶瓷尊享版</p>
+										<p>双焦双摄</p>
+										<p>￥2999</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/star-nav4.jpg" alt="图片">
+								</a>
+								<a href="#">
+									<div>
+										<p>小米电视4A 43英寸标准设备</p>
+										<p>全高清/HDR,64位处理器</p>
+										<p>￥1899</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/start-nav6.jpg" alt="图片">
+								</a>
+								<a href="#">
+									<div>
+										<p>小米 智能手环</p>
+										<p>待机长 更健康</p>
+										<p>￥299</p>
+										<i>直降10</i>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="mc-star-list2 mc-rd-com">
+					<a href="#">
+						<div>
+							<p>小米5X边角双摄</p>
+							<p>5.5"大屏轻薄全金属，4GB大内存</p>
+						</div>
+					</a>
+				</div>
+			</section>
+			<!--米家智能-->
+			<section class="mc-home">
+				<a href="#" class="mc-home-header">
+					<h2>米家智能</h2>
+				</a>
+				<div class="mc-home-content">
+					<a href="#">
+						<p>小米空气净化器2</p>
+						<p>10月4日到5日，限量送插线板</p>
+						<p>￥699</p>
+						<img src="images/intelligence1.png" alt="图片">
+					</a>
+				</div>
+				<div class="mc-home-list">
+					<ul class="clearfix">
+						<li>
+							<a href="#">
+								<img src="images/intelligence-nav1.jpg" alt="图片">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div>
+									<p>小米魔方控制器</p>
+									<p>搭配小米多功能网管，做生活的魔术师</p>
+									<p>￥69</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div>
+									<p>小米对讲机</p>
+									<p>距离更远，声音更清晰</p>
+									<p>￥99</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/intelligence-nav2.jpg" alt="图片">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/intelligence-nav3.jpg" alt="图片">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div>
+									<p>小米智能家庭套装</p>
+									<p>搭配小米多功能网管，做生活的魔术师</p>
+									<p>￥599</p>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="mc-home-more">
+					<a href="#">
+						<p>更多米家智能产品></p>	
+					</a>
+				</div>
+				<div class="mc-home-list2 mc-rd-com">
+					<a href="#">
+						<div>
+							<p>红米4X 超长续航</p>
+							<p>5.5"大屏轻薄全金属，4GB大内存</p>
+						</div>
+					</a>
+				</div>
+			</section>
+			<!--分类列表-->
+			<section class="mc-type clearfix">
+				<ul class="mc-tp-lt fl-l clearfix">
+					<li>
+						<a href="#" class="mc-tp-lt1">
+							<div>
+								<p>学习办公</p>
+								<p>听说学霸都爱这些装备</p>
+							</div>	
+						</a>
+					</li>
+					<li>
+						<a href="#" class="mc-tp-lt1">
+							<div>
+								<p>旅行伙伴</p>
+								<p>带上行囊，轻装出发</p>
+							</div>	
+						</a>
+					</li>
+					<li>
+						<a href="#" class="mc-tp-lt1">
+							<div>
+								<p>新家必备</p>
+								<p>好生活，从健康空气开始</p>
+							</div>	
+						</a>
+					</li>
+				</ul>
+				<ul class="mc-tp-rgt fl-r clearfix">
+					<li>
+						<a href="#" class="mc-tp-lt1">
+							<div>
+								<p>米家智能</p>
+								<p>生活中的艺术品</p>
+							</div>	
+						</a>
+					</li>
+					<li>
+						<a href="#" class="mc-tp-lt1">
+							<div>
+								<p>音乐发烧</p>
+								<p>接下来，听一首歌</p>
+							</div>	
+						</a>
+					</li>
+					<li>
+						<a href="#" class="mc-tp-lt1">
+							<div>
+								<p>潮流酷玩</p>
+								<p>享受科技的乐趣</p>
+							</div>	
+						</a>
+					</li>
+				</ul>
+			</section>
+			<!--猜你喜欢-->
+			<section class="mc-guess">
+				<div class="mc-gue-header">
+					<h2>猜你喜欢</h2>
+					<p>实时推荐你的心心念念</p>
+				</div>
+				<div class="mc-gue-list clearfix">
+					<div class="gue-list-lt fl-l">
+						<ul class="clearfix">
+							<li>
+								<a href="#">
+									<img src="images/guess1.jpg" alt="图片">
+								</a>
+								<a href="#">
+									<div>
+										<p>小米6 陶瓷尊享版</p>
+										<p>双焦双摄</p>
+										<p>￥2999</p>
+										<i>现货</i>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/guess3.jpg" alt="图片">
+								</a>
+								<a href="#">
+									<div>
+										<p>小米电视4A 43英寸标准设备</p>
+										<p>全高清/HDR,64位处理器</p>
+										<p>￥1899</p>
+										<i>立减</i>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/guess5.jpg" alt="图片">
+								</a>
+								<a href="#">
+									<div>
+										<p>红米 NOTE</p>
+										<p>双焦双摄</p>
+										<p>￥1699</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="gue-list-rgt fl-r">
+						<ul class="clearfix">
+							<li>
+								<a href="#">
+									<img src="images/guess2.jpg" alt="图片">
+								</a>
+								<a href="#">
+									<div>
+										<p>小米6 陶瓷尊享版</p>
+										<p>双焦双摄</p>
+										<p>￥2999</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/guess4.jpg" alt="图片">
+								</a>
+								<a href="#">
+									<div>
+										<p>小米电视4A 43英寸标准设备</p>
+										<p>全高清/HDR,64位处理器</p>
+										<p>￥1899</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/guess6.jpg" alt="图片">
+								</a>
+								<a href="#">
+									<div>
+										<p>小米 智能手环</p>
+										<p>待机长 更健康</p>
+										<p>￥299</p>
+										<i>直降10</i>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<!--夏日出行-->
+			<section class="mc-summer">
+				<div>
+					<h2>夏日出行</h2>
+					<a href="#">
+						<img src="images/summer1.jpg" alt="图片">
+					</a>
+					<span>￥799</span>
+				</div>
+				<div class="mc-summer-list">
+						<ul class="clearfix">
+							<li>
+								<a href="#">
+									<img src="images/summer2.jpg" alt="图片">
+								</a>
+								<a href="#">
+									<div>
+										<p>小米6 陶瓷尊享版</p>
+										<p>双焦双摄</p>
+										<p>￥2999</p>
+										<i>现货</i>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/summer3.jpg" alt="图片">
+								</a>
+								<a href="#">
+									<div>
+										<p>小米电视4A 43英寸标准设备</p>
+										<p>全高清/HDR,64位处理器</p>
+										<p>￥1899</p>
+										<i>立减</i>
+									</div>
+								</a>
+							</li>
+						</ul>
+				</div>
+			</section>
+		</div>
+		<footer class="footer">
+			<ul>
+				<li>
+					<a href="#">
+						<div></div>
+						<p>首页</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<div></div>
+						<p>分类</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<div></div>
+						<p>购物车</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<div></div>
+						<p>我的</p>
+					</a>
+				</li>
+			</ul>
+		</footer>
+	</div>
+	
+	
+	<script src="js/swiper-3.4.2.min.js"></script>
+	<script>
+		var mySwiper = new Swiper('.swiper-container',{
+			autoplay : 3000,
+			pagination : '.swiper-pagination',
+			loop : true,
+		})
+	</script>
+ </body>
+</html><!--网页的结束-->

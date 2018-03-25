@@ -1,0 +1,19 @@
+@charset "utf-8";
+*{margin:0;padding:0;}
+a{text-decoration:none;}
+img{vertical-align:middle;}
+li{list-style:none;}
+body{
+	font:.2rem/1.5 "Microsoft YaHei", Arial, Helvetica, sans-serif;
+}
+.clearfix:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+.bg-fa{background-color:#fafafa;}/*头部栏的灰色*/
+
+.fl-r{float: right;}
+.fl-l{float: left;}
+
+.bor-b-f6{border-bottom:3px solid #ff6700;}
